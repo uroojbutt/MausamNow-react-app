@@ -1,4 +1,6 @@
-const API_KEY = "36ef2f5ad087bca4950203a96d54f6ec"; // 🔁 Replace with your real OpenWeatherMap API key
+// const API_KEY = "36ef2f5ad087bca4950203a96d54f6ec"; // 🔁 Replace with your real OpenWeatherMap API key
+const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+
 
 // 🔁 FETCH CURRENT WEATHER WITH UNIT SUPPORT
 export const fetchWeatherData = async (city, unit = "metric") => {
